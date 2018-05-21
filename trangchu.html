@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab thay Thanh</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="trangchu.css">
+</head>
+<body>
+	<div class="tieude">
+		<nav class="navbar-default navbar-inverse" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+
+				<div class="row">
+					<div class=" col-md-6">
+						<div class="navbar-header">
+							<a class="navbar-brand" href="#">Hỗ trợ: 0985971038</a>
+						</div>
+					</div>
+					<div class="col-md-6"><div class="tieude_benPhai">
+						<button class="btn-login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Đăng nhập</button>
+						<button class="btn-dangky" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Đăng ký</button>
+
+					</div></div>
+				</div>
+				
+				
+
+
+				<div id="id01" class="modal">
+
+					<form class="modal-content animate" action="/action_page.php">
+						<div class="imgcontainer ">
+							<span style="color:red;" onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+							<img src="images/btn-login.png" alt="Avatar" class="avatar ">
+						</div>
+
+						<div class="container">
+							<label for="uname"><b>Username</b></label>
+							<input type="text" placeholder="Enter Username" name="uname" required>
+
+							<label for="psw"><b>Password</b></label>
+							<input type="password" placeholder="Enter Password" name="psw" required>
+
+							<button class="loginbtn" type="submit">Login</button>
+							<label>
+								<input type="checkbox" checked="checked" name="remember"> Remember me
+							</label>
+						</div>
+
+						<div class="container" style="background-color:#f1f1f1">
+							<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+							<span class="psw">Forgot <a href="#">password?</a></span>
+						</div>
+					</form>
+				</div>
+
+				<!-- dang kí -->
+				<div id="id02" class="modal">
+					
+					<form class="modal-content" action="/action_page.php">
+						<span style="color:red;" onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+						<div class="container">
+							<h1>Sign Up</h1>
+							<p>Please fill in this form to create an account.</p>
+							<hr>
+							<label for="email"><b>Email</b></label>
+							<input type="text" placeholder="Enter Email" name="email" required>
+
+							<label for="psw"><b>Password</b></label>
+							<input type="password" placeholder="Enter Password" name="psw" required>
+
+							<label for="psw-repeat"><b>Repeat Password</b></label>
+							<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+							
+							<label>
+								<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+							</label>
+
+							<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+							<div class="clearfix">
+								<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+								<button type="submit" class="signupbtn">Sign Up</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div><!-- /.navbar-collapse -->
+		</nav>
+	</div>
+	<!-- ket thuc tieu de -->
+	<div class="header ">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<img src="images/logo.png" alt="" class="img-responsive">
+				</div>
+
+				<div class="slogan col-md-3">
+					<h3>Sự tín nhiệm của bạn</h3>
+					<h3>là thành công của chúng tôi</h3>
+				</div>
+				<div class="menu col-md-7">
+					<div class="row">
+						<nav class="navbar navbar-default" role="navigation">
+							<div class="container-fluid">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+
+								</div>
+
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse navbar-ex1-collapse">
+									<ul class="nav navbar-nav navbar-static-top">
+										<li class="active"><a href="#">Trang chủ</a></li>
+										<li><a href="gioithieu.html">Giới thiệu</a></li>
+										<li><a href="">Tin Tức</a></li>
+										<li><a href="trangchu.html">Sản phẩm</a></li>
+										<li><a href="nghiencuu.html">Nghiên cứu</a></li>
+										<li><a href="lienhe.html">Liên hệ</a></li>
+									</ul>
+
+								</div><!-- /.navbar-collapse -->
+							</div>
+						</nav>
+						<!-- Menu trang chủ -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ket thuc menu -->
+	<div class="theme-slider">
+		<div class="container-fluid" >
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div id="carousel-id" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-id" data-slide-to="0" class=""></li>
+							<li data-target="#carousel-id" data-slide-to="1" class=""></li>
+							<li data-target="#carousel-id" data-slide-to="2" class=""></li>
+							<li data-target="#carousel-id" data-slide-to="3" class="active"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="images/iot.jpg" alt="First slide" style="width: 100%;height: 400px">
+							</div>
+							<div class="item">
+								<img src="images/radar.jpg" alt="Second slide" style="width: 100%;height: 400px">
+							</div>
+							<div class="item ">
+								<img src="images/cryptography.jpg" alt="Third slide" style="width: 100%;height: 400px">
+
+							</div>
+							<div class="item ">
+								<img src="images/hethongtm.jpg" alt="fourth slide" style="width: 100%;height: 400px">
+
+							</div>
+						</div>
+						<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+						<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ket thuc slider -->
+
+	<div class="container-fluid"
+	style="background: #ebebeb;height: 20px; margin-top:20px"></div>
+	<div class="danhmucsp" >
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-3">
+					<div class="panel panel-default">
+						<!-- Default panel contents -->
+						<div class="panel-heading text-center">Giới thiệu</div>
+
+						<!-- List group -->
+						<ul class="list-group">
+							<a href="gioithieu.html"><li class="list-group-item">Lời giới thiệu</li></a>
+							<a href="trangchu.html"><li class="list-group-item">Sản phẩm nổi bật</li></a>
+							
+
+						</ul>
+					</div>
+					<div class="panel panel-default">
+						<!-- Default panel contents -->
+						<div class="panel-heading text-center">Hỗ trợ trực tuyến </div>
+
+						<!-- Hỗ trợ -->
+
+						<div class="hoTro text-center">
+							<br>
+							<p>(Kinh doanh) 01647942064</p>
+							<p>vuonghieubk@gmail.com</p>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<!-- Default panel contents -->
+						<div class="panel-heading text-center">Hỗ trợ khách hàng </div>
+
+						<!-- Hỗ trợ -->
+
+						<div class="hoTro " style="padding: 10px 15px">
+							<ul>
+								<a href=""><li>Chính sách bảo mật thông tin</li></a>
+								<a href=""><li>Chính sách đổi trả hàng và hoàn tiền</li></a>
+								<a href=""><li>Chính sách bảo hành</li></a>
+								<a href=""><li>Chính sách và quy định chung</li></a>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9 ">
+					<div class="panel panel-default">
+						<!-- Default panel contents -->
+						<div class="panel-heading text-center">Sản phẩm</div>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="sanpham">
+									<div class="col-md-4">
+										<div class="thumbnail">
+											<div class="hovereffect">
+												<img src="images/UAV.png" alt="" class="img-responsive" style="height: 200px">
+												<div class="overlay">
+													<h2>UAV là gì</h2>
+													<h2>Nghiên cứu các thuật toán điều khiển UAV</h2>
+													<a href="nghiencuu.html"><p>Chi tiết</p></a>
+												</div>
+											</div>
+											<div class="text-center">
+												<h4>UAV </h4>
+												<p style="color: red">
+													Giá: Liên hệ
+												</p>
+												<p>
+													<a href="#" class="btn btn-primary">Mua ngay</a>
+													<a href="#" class="btn btn-default">Liên hệ</a>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="thumbnail">
+											<div class="hovereffect">
+												<img src="images/AMSG.png" alt="" class="img-responsive" style="height: 200px">
+												<div class="overlay">
+													<h2>AMSG là gì</h2>
+													<h2>Nghiên cứu, phát triển các hệ thống thu phát...</h2>
+												</div>
+											</div>
+											<div class="text-center">
+												<h4>AMSG</h4>
+												<p style="color: red">
+
+													Giá: Liên hệ
+												</p>
+												<p>
+													<a href="#" class="btn btn-primary">Mua ngay</a>
+													<a href="#" class="btn btn-default">Liên hệ</a>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="thumbnail">
+											<div class="hovereffect">
+												<img src="images/RSPG.png" alt="" class="img-responsive" style="height: 200px">
+												<div class="overlay">
+													<h2>Nghiên cứu, thiết kế và phát triển hệ thống
+													Wideband Radar</h2>
+
+												</div>
+											</div>
+											<div class="text-center">
+												<h4>RSPG</h4>
+												<p style="color: red">
+
+													Giá: Liên hệ
+												</p>
+												<p>
+													<a href="#" class="btn btn-primary">Mua ngay</a>
+													<a href="#" class="btn btn-default">Liên hệ</a>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="thumbnail">
+											<div class="hovereffect">
+												<img src="images/ISSG.png" alt="" class="img-responsive" style="height: 200px">
+												<div class="overlay">
+													<h2>Nghiên cứu, thiết kế và phát triển hệ thống thông minh, IOT</h2>
+
+												</div>
+											</div>
+											<div class="text-center">
+												<h4>ISSG</h4>
+												<p style="color: red">
+
+													Giá: Liên hệ
+												</p>
+												<p>
+													<a href="#" class="btn btn-primary">Mua ngay</a>
+													<a href="#" class="btn btn-default">Liên hệ</a>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="thumbnail">
+											<div class="hovereffect">
+												<img src="images/AI.png" alt="" class="img-responsive" style="height: 200px">
+												<div class="overlay">
+													<h2>Nghiên cứu và phát triển trí tuệ nhân tạo</h2>
+
+												</div>
+											</div>
+											<div class="text-center">
+												<h4>AI</h4>
+												<p style="color: red">
+
+													Giá: Liên hệ
+												</p>
+												<p>
+													<a href="#" class="btn btn-primary">Mua ngay</a>
+													<a href="#" class="btn btn-default">Liên hệ</a>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="thumbnail">
+											<div class="hovereffect">
+												<img src="images/Crypt.png" alt="" class="img-responsive" style="height: 200px">
+												<div class="overlay">
+													<h2>Nghiên cứu, phát triển các thuật toán một số hệ mật, hàm băm,...</h2>
+
+												</div>
+											</div>
+											<div class="text-center">
+												<h4>Cryptography</h4>
+												<p style="color: red">
+
+													Giá: Liên hệ
+												</p>
+												<p>
+													<a href="#" class="btn btn-primary">Mua ngay</a>
+													<a href="#" class="btn btn-default">Liên hệ</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid"
+		style="background: #ebebeb;height: 20px; margin-top: 10px"></div>
+
+		<div class="blog" >
+
+			<div class="bangtin container" >
+				<h3 class="blog text-center" >Tin Tức</h3>
+				<p class="text-center">Bản tin cập nhật</p>
+				<div class="row" >
+					<div class="col-md-4">
+						
+						<a href="http://aselab.edu.vn/index.php/vi/gioi-thieu/11-thong-bao-tuyen-thanh-vien-aselab-2017"><div class="thumbnail">
+							<img src="images/tuyenthanhvien.png" alt="" style="height: 200px;width: 100%">
+							<div class="caption text-center">
+								<p>Thông báo tuyển thành viên ASELAB 2018</p>
+								<p>
+									...
+								</p>
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-4">
+						
+						<a href="http://aselab.edu.vn/index.php/vi/gt-co-cau-to-chuc"><div class="thumbnail">
+							<img src="images/listcanbo.png" alt="" style="height: 200px;width: 100%">
+							<div class="caption text-center">
+								<p>Danh sách cán bộ</p>
+								<p>
+									...
+								</p>
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-4">
+						
+						<a href="http://aselab.edu.vn/index.php/vi/gioi-thieu/gioi-thieu-bo-mon"><div class="thumbnail">
+							<img src="images/introduce.png" alt="" style="height: 200px;width: 100%">
+							<div class="caption text-center">
+								<p>Giới thiệu bộ môn</p>
+								<p>
+									...
+								</p>
+							</div>
+						</div></a>
+					</div>
+				</div> 
+			</div>
+		</div>
+
+		<!-- ket thuc blog -->
+
+		<div class="container-fluid"
+		style="background: #ebebeb;height: 20px; margin-top: 20px"></div>
+		<footer>
+			<div class="footerHeader" ></div>
+			<div class="container" style="border-bottom: 1px solid white">
+				<div class="col-md-4" >
+					<h3>About us</h3>
+					<p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					</p>
+				</div>
+
+				<div class="col-md-4">
+					<h3>Our Location </h3>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7146079376316!2d105.84334581461343!3d21.004074186011742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac76cca9ecc5%3A0x6c32e8432cc99811!2zOTUgVHLhuqduIMSQ4bqhaSBOZ2jEqWEsIDk1IFRy4bqnbiDEkOG6oWkgTmdoxKlhLCBCw6FjaCBLaG9hLCBIYWkgQsOgIFRyxrBuZyBEaXN0cmljdCwgSGFub2ksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1526402592974" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-4" >
+					<h3>Contact Us</h3>
+					<ul>
+						<li>Phone : 01647942064</li>
+						<li>E-mail : vuonghieubk@gmail.com</li>
+						<li>Fax : 123 - 456 - 789</li>
+					</ul>
+					<p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+					</p>
+					<ul class="sm">
+						<li><a href="#" ><img src="https://www.facebook.com/images/fb_icon_325x325.png" class="img-responsive"></a></li>
+						<li><a href="#" ><img src="https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=w300" class="img-responsive" ></a></li>
+						<li><a href="#" ><img src="http://playbookathlete.com/wp-content/uploads/2016/10/twitter-logo-4.png" class="img-responsive"  ></a></li>
+					</ul>
+				</div>
+			</div>
+			<br>	
+		</footer>
+
+
+		<script>
+
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
+</script> <!-- ket thuc js login-signup -->
+<<script>
+	$(function () {
+		$('.navbar-static-top li:nth-child(3) a')
+		.click(function(){
+			$('body').animate({scrollTop:700})
+		})
+	})
+</script>
+<script>
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip();   
+	});
+</script>
+</body>
+</html>
